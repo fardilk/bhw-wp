@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mekara": {
+      "type": "stdio",
+      "command": "poetry",
+      "args": ["run", "mekara", "mcp"]
+    }
+  }
+}
