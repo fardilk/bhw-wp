@@ -410,19 +410,6 @@ function bhw_quote_columns($columns) {
     return $columns;
 }
 
-add_action('manage_bhw_quote_posts_custom_column', 'bhw_quote_column_content', 10, 2);
-
-function bhw_quote_column_content($column, $post_id) {
-    switch ($column) {
-        case 'email':
-            echo esc_html(get_post_meta($post_id, '_bhw_email', true));
-            break;
-        case 'service':
-            echo esc_html(get_post_meta($post_id, '_bhw_service', true));
-            break;
-    }
-}
-
 // ============================================
 // DISABLE COMMENTS (Not needed for this site)
 // ============================================
