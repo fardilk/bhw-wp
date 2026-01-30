@@ -1,0 +1,522 @@
+/* Responsive Design - Mobile First Approach */
+
+/* ============================================
+   EXTRA SMALL (Mobile - 320px to 479px)
+   ============================================ */
+
+/* Base mobile styles handled in component files */
+
+/* ============================================
+   SMALL (480px to 767px)
+   ============================================ */
+
+@media (min-width: 480px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .differentiators-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .stats-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .stat-number {
+        font-size: var(--font-size-4xl);
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* ============================================
+   MEDIUM (Tablet - 768px to 1023px)
+   ============================================ */
+
+@media (min-width: 768px) {
+    /* Header */
+    .header {
+        height: auto;
+        padding: var(--spacing-4) 0;
+    }
+
+    /* Navigation */
+    .nav-desktop {
+        display: none;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    /* Sections */
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .differentiators-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .stats-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+        padding: var(--spacing-6);
+    }
+
+    .stat-number {
+        font-size: var(--font-size-4xl);
+    }
+
+    .coverage-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-8);
+    }
+
+    /* Forms */
+    .cta-form-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-8);
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .quote-form {
+        padding: var(--spacing-6);
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-4);
+    }
+
+    /* Newsletter */
+    .newsletter-input-group {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .newsletter-form input {
+        border-radius: var(--radius-md) 0 0 var(--radius-md);
+    }
+
+    .newsletter-form button {
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    .newsletter-content {
+        flex-direction: row;
+        gap: var(--spacing-8);
+        align-items: center;
+    }
+
+    .newsletter-text {
+        flex: 0 0 40%;
+    }
+
+    .newsletter-form {
+        flex: 1;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--spacing-6);
+    }
+
+    .footer-legal {
+        gap: var(--spacing-4);
+    }
+
+    /* Floating CTA - Still mobile only */
+    .floating-cta {
+        bottom: var(--spacing-8);
+        right: var(--spacing-6);
+    }
+
+    /* Contact Methods */
+    .contact-methods {
+        flex-direction: row;
+        gap: var(--spacing-4);
+    }
+
+    .contact-method {
+        flex: 1;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    /* Hero CTA Group */
+    .hero-cta-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   LARGE (Desktop - 1024px to 1279px)
+   ============================================ */
+
+@media (min-width: 1024px) {
+    /* Header */
+    .header {
+        height: var(--header-height);
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none !important;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    /* Sections */
+    .service-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .differentiators-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .stats-box {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .coverage-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-8);
+    }
+
+    /* Forms */
+    .cta-form-wrapper {
+        grid-template-columns: 1fr 300px;
+        gap: var(--spacing-8);
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+
+    .alternative-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    .contact-method {
+        flex-direction: row;
+    }
+
+    /* Newsletter */
+    .newsletter-content {
+        justify-content: space-between;
+    }
+
+    .newsletter-text {
+        flex: 0 0 auto;
+    }
+
+    .newsletter-form {
+        flex: 0 0 auto;
+        min-width: 400px;
+    }
+
+    /* Floating CTA - Hide on desktop */
+    .floating-cta {
+        display: none !important;
+    }
+
+    .floating-cta.active {
+        display: none !important;
+    }
+}
+
+/* ============================================
+   EXTRA LARGE (Desktop - 1280px to 1439px)
+   ============================================ */
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-h1);
+    }
+}
+
+/* ============================================
+   2XL (Wide Desktop - 1440px+)
+   ============================================ */
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .section-title {
+        font-size: var(--font-size-h1);
+        margin-bottom: var(--spacing-8);
+    }
+
+    .service-card {
+        padding: var(--spacing-8);
+    }
+
+    .differentiator {
+        padding: var(--spacing-8);
+    }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Increase button sizes for touch */
+    .btn-primary,
+    .btn-secondary {
+        height: 56px;
+        padding: 14px 28px;
+    }
+
+    .btn-large {
+        height: 56px;
+    }
+
+    /* Larger touch targets */
+    input, select, textarea {
+        padding: 12px 16px;
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+
+    .contact-method {
+        padding: var(--spacing-5);
+    }
+
+    /* Remove hover effects that don't apply */
+    .service-card:hover {
+        transform: none;
+    }
+
+    .differentiator:hover {
+        box-shadow: var(--shadow-sm);
+    }
+
+    button:not(:disabled):active {
+        transform: scale(0.95);
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .header,
+    .floating-cta,
+    .hamburger,
+    .mobile-menu {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .service-grid,
+    .differentiators-grid {
+        page-break-inside: avoid;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: more) {
+    .btn-primary,
+    .btn-secondary {
+        border-width: 3px;
+    }
+
+    input:focus,
+    select:focus {
+        border-width: 3px;
+    }
+
+    .service-card,
+    .differentiator {
+        border: 2px solid var(--color-secondary);
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ============================================
+   DARK MODE (Future Implementation)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    /* Define dark mode colors if needed */
+    /* Using CSS variables already supports this */
+}
+
+/* ============================================
+   LANDSCAPE ORIENTATION (Mobile)
+   ============================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-banner {
+        height: 60vh;
+        min-height: auto;
+    }
+
+    section {
+        padding: var(--spacing-6) 0;
+    }
+
+    .service-grid {
+        gap: var(--spacing-4);
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        height: var(--btn-height-sm);
+        padding: 10px 20px;
+    }
+}
+
+/* ============================================
+   WIDE ASPECT RATIO (Very Wide Screens)
+   ============================================ */
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    section {
+        padding: var(--spacing-32) 0;
+    }
+
+    .hero-title {
+        font-size: 72px;
+    }
+
+    .section-title {
+        font-size: 56px;
+        margin-bottom: var(--spacing-12);
+    }
+
+    .service-card {
+        padding: var(--spacing-12);
+    }
+
+    .differentiator {
+        padding: var(--spacing-12);
+    }
+
+    .stats-box {
+        padding: var(--spacing-12);
+    }
+}
