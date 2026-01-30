@@ -54,7 +54,7 @@ echo "   ✓ Contact Form 7 installed"
 wp plugin install wp-super-cache --activate --allow-root
 echo "   ✓ WP Super Cache installed"
 
-wp plugin install yoast-seo --activate --allow-root
+wp plugin install wordpress-seo --activate --allow-root
 echo "   ✓ Yoast SEO installed"
 
 wp plugin install wordfence --activate --allow-root
@@ -190,7 +190,7 @@ wp theme status --allow-root | grep -A 1 "twentytwentyfour-child" || echo "   Th
 
 echo ""
 echo "   Installed plugins:"
-wp plugin list --allow-root | grep -E "(contact-form-7|wp-super-cache|yoast-seo|wordfence|google-site-kit)" | grep "active" | wc -l
+wp plugin list --allow-root | grep -E "(contact-form-7|wp-super-cache|wordpress-seo|wordfence|google-site-kit)" | grep "active" | wc -l
 echo "   plugins activated"
 
 echo ""
