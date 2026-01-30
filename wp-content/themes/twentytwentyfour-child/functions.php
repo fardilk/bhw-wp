@@ -22,7 +22,6 @@ define('BHW_FREIGHT_URL', get_stylesheet_directory_uri());
 // LOAD INCLUDES
 // ============================================
 
-require_once BHW_FREIGHT_DIR . '/inc/theme-setup.php';
 require_once BHW_FREIGHT_DIR . '/inc/enqueue-scripts.php';
 require_once BHW_FREIGHT_DIR . '/inc/custom-post-types.php';
 require_once BHW_FREIGHT_DIR . '/inc/theme-options.php';
